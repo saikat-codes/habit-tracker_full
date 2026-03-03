@@ -120,7 +120,7 @@ export function QuotesOverview() {
     "
     >
       <div className="flex flex-col gap-0.5 mb-3">
-        <h2 className="text-white text-lg font-bold font-space tracking-tight">
+        <h2 className="text-white text-lg font-bold font-poppins tracking-tight">
           Daily Motivation
         </h2>
         <p className="text-white/60 font-poppins text-xs">Stay consistent</p>
@@ -128,7 +128,7 @@ export function QuotesOverview() {
 
       <div className="flex-1 flex items-center justify-center text-center px-1">
         <div className="max-w-sm">
-          <p className="text-white/85 text-sm md:text-base leading-snug font-medium font-poppins">
+          <p className="text-white/85 text-sm md:text-base leading-snug font-medium font-space">
             “{quote.text}”
           </p>
 
