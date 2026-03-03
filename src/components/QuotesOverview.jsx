@@ -110,30 +110,23 @@ export function QuotesOverview() {
   if (!quote) return null;
 
   return (
-    <div
-      className="
-      w-full h-full
-      p-8 rounded-3xl
-      bg-white/5 backdrop-blur-xl
-      border border-white/10
-      flex flex-col
-    "
-    >
-      <div className="flex flex-col gap-0.5 mb-3">
-        <h2 className="text-white text-lg font-bold font-poppins tracking-tight">
+    <div className="w-full h-full p-6 overflow-y-auto flex flex-col">
+      
+      <div className="flex flex-col mb-4 shrink-0">
+        <h2 className="text-white text-lg font-bold tracking-tight font-poppins">
           Daily Motivation
         </h2>
-        <p className="text-white/60 font-poppins text-xs">Stay consistent</p>
+        <p className="text-white/60 text-xs font-jetbrains font-extrabold">Stay consistent</p>
       </div>
 
-      <div className="flex-1 flex items-center justify-center text-center px-1">
-        <div className="max-w-sm">
-          <p className="text-white/85 text-sm md:text-base leading-snug font-medium font-space">
+      <div className="flex-1 flex items-center justify-center text-center">
+        <div className="w-full">
+          <p className="text-white/85 text-base md:text-lg font-space font-medium">
             “{quote.text}”
           </p>
 
           {quote.author && (
-            <p className="mt-2 text-white/45 text-xs italic">
+            <p className="mt-3 text-white/45 text-xs uppercase tracking-widest italic font-bold">
               — {quote.author}
             </p>
           )}

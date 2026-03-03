@@ -2,29 +2,30 @@ import React from "react"
 import { QuotesOverview } from "./components/QuotesOverview"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./Login";
+import HabitCard from "./components/HabitCard";
 
 function Dashboard() {
   return (
-    <div className="bg-[url('assets/background.png')] bg-cover bg-center min-h-screen w-full p-4 box-border overflow-y-auto">
-      <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-5 gap-3 w-full max-w-7xl mx-auto">
+    <div className="bg-[url('assets/background.png')] bg-cover bg-center h-screen w-screen p-4 box-border overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-5 gap-3 w-full h-full mx-auto">
       
-        <div className="md:col-span-2 md:row-span-5 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white text-2xl font-semibold min-h-[200px]">
-          1
+        <div className="md:col-span-2 md:row-span-5 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white text-2xl font-semibold min-h-0">
+          <HabitCard/>
         </div>
       
-        <div className="md:col-start-5 md:row-start-1 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-[100px]">
+        <div className="md:col-start-5 md:row-start-1 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-0">
           3
         </div>
       
-        <div className="md:col-start-5 md:row-start-2 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-2 shadow-xl flex items-center justify-center text-white font-semibold overflow-hidden">
+        <div className="md:col-start-5 md:row-start-2 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl shadow-xl overflow-hidden min-h-0">
           <QuotesOverview />
         </div>
       
-        <div className="md:col-start-3 md:row-start-1 md:col-span-2 md:row-span-2 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-[150px]">
+        <div className="md:col-start-3 md:row-start-1 md:col-span-2 md:row-span-2 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-0">
           5
         </div>
       
-        <div className="md:col-start-3 md:row-start-3 md:col-span-3 md:row-span-3 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-[200px]">
+        <div className="md:col-start-3 md:row-start-3 md:col-span-3 md:row-span-3 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-0">
           6
         </div>
       
