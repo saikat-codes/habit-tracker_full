@@ -19,9 +19,9 @@ export default function Login() {
 
             <div className="relative">
               <img
-                src="assets/background.png"
+                src="login-final.png"
                 alt="Illustration"
-                className="w-72 h-72 object-contain mb-8 drop-shadow-2xl"
+                className="w-72 h-72 object-contain mb-8 drop-shadow-2xl rounded-xl border-white/10 border-2"
               />
             </div>
 
