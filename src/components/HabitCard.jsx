@@ -77,7 +77,7 @@ const HabitCard = () => {
               <div className="flex shrink-0">
                 <button 
                   onClick={() => deleteHabit(habit.id)} 
-                  className="text-[12px] uppercase tracking-wider bg-red-500/10 text-red-400 px-2 py-1 rounded-md border border-red-500/20 mr-1.5 transition-all hover:bg-red-500/30 active:scale-95 cursor-pointer font-poppins font-bold"
+                  className="text-[12px] uppercase tracking-wider bg-red-500/10 text-red-400 px-2 py-1 rounded-md border border-red-500/20 mr-1.5 transition-all hover:bg-red-500/30 active:scale-90 cursor-pointer font-poppins font-bold"
                 >
                   Delete
                 </button>

@@ -1,9 +1,8 @@
 import React from "react"
-import { QuotesOverview } from "./components/QuotesOverview"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./Login";
-import HabitCard from "./components/HabitCard";
-import { ProgressBar } from "./components/ProgressBar";
+import { CalendarCard, HabitCard, ProgressBar, QuotesOverview} from "./components";
+import Signup from "./SignUp";
 
 function Dashboard() {
   return (
@@ -29,7 +28,8 @@ function Dashboard() {
         </div>
 
         <div className="md:col-start-3 md:row-start-1 md:col-span-2 md:row-span-2 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-0">
-          calender
+          <CalendarCard/>
+          
         </div>
 
         <div className="md:col-start-3 md:row-start-3 md:col-span-3 md:row-span-3 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-0">
@@ -45,6 +45,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

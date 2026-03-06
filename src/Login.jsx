@@ -19,9 +19,9 @@ export default function Login() {
 
             <div className="relative">
               <img
-                src="login-final.png"
+                src="login.png"
                 alt="Illustration"
-                className="w-72 h-72 object-contain mb-8 drop-shadow-2xl rounded-xl border-white/10 border-2"
+                className="w-75 h-75 object-contain mb-8 drop-shadow-2xl rounded-xl"
               />
             </div>
 
@@ -65,12 +65,7 @@ export default function Login() {
                   <label className="text-white/80 text-xs font-medium ml-1">
                     Password
                   </label>
-                  <button
-                    type="button"
-                    className="text-white/40 text-[10px] hover:text-white transition-colors"
-                  >
-                    Forgot Password?
-                  </button>
+                  
                 </div>
                 {/* <input
                 type="password"
@@ -85,7 +80,7 @@ export default function Login() {
               
               <button
                 type="submit"
-                className="w-full bg-white/90 hover:bg-white text-black font-bold py-3 rounded-xl shadow-lg transform transition active:scale-[0.98] mt-2 font-poppins"
+                className="w-full bg-white/90 hover:bg-white text-black font-bold py-3 rounded-xl shadow-lg transform transition active:scale-[0.98] mt-2 font-poppins hover:cursor-pointer"
               >
                 Login
               </button>
@@ -94,7 +89,7 @@ export default function Login() {
             <div className="mt-10 text-center">
               <p className="text-white/40 text-xs">
                 Not Registered Yet?{" "}
-                <span className="text-white font-bold cursor-pointer hover:underline">
+                <span onClick={()=> navigate("/signup")} className="text-white font-bold cursor-pointer hover:underline">
                   Create an account
                 </span>
               </p>
