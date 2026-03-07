@@ -55,7 +55,7 @@ const HabitCard = ({ habits, onAdd, onDelete, onDone }) => {
           habits.map((habit) => (
             <div 
               key={habit.id} 
-              className="flex items-center justify-between bg-white/5 border border-white/10 backdrop-blur-md p-3 rounded-xl mb-3 last:mb-0 transition-all hover:bg-white/10"
+              className="flex items-center justify-between bg-white/5 border border-white/10 backdrop-blur-md p-3 rounded-xl mb-3 last:mb-0 transition-all hover:bg-white/10 overflow-auto"
             >
               <p className={`text-[#f1f1f1] font-poppins text-base h-fit w-full wrap-break-word pr-3 uppercase font-bold ${habit.completed ? 'line-through opacity-40' : ''}`}>
                 {habit.text}

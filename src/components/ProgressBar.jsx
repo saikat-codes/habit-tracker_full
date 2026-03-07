@@ -15,7 +15,7 @@ export function ProgressBar({ habits = [] }) {
           htmlFor="habit-progress" 
           className="flex justify-between items-end w-full"
         >
-          <span className="text-white/70 text-xs uppercase tracking-[0.2em] font-poppins font-bold">
+          <span className="text-white/70 text-[14px] uppercase tracking-[0.2em] font-poppins font-extrabold mb-1">
             Daily Progress
           </span>
           <span className="text-white text-xl font-jetbrains font-extrabold tabular-nums">

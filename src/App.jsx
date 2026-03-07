@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Login from "./Login";
-import { CalendarCard, HabitCard, ProgressBar, QuotesOverview} from "./components";
+import { CalendarCard, HabitCard, ProgressBar, QuotesOverview, Chart} from "./components";
 import Signup from "./SignUp";
 
 function Dashboard() {
@@ -53,8 +53,15 @@ function Dashboard() {
           <CalendarCard />
         </div>
 
-        <div className="md:col-start-3 md:row-start-3 md:col-span-3 md:row-span-3 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex items-center justify-center text-white font-semibold min-h-0">
-          chart
+        <div className="md:col-start-3 md:row-start-3 md:col-span-3 md:row-span-3 bg-[#00000038] backdrop-blur-xl border-2 border-white/10 rounded-2xl p-6 shadow-xl flex flex-col items-start justify-start overflow-hidden">
+
+          <span className="text-white/70 text-[14px] uppercase tracking-[0.2em] font-poppins font-extrabold mb-4">
+            Activity Overview
+          </span>
+
+          <div className="flex-1 w-full min-h-0">
+            <Chart habits={habits} />
+          </div>
         </div>
       </div>
     </div>

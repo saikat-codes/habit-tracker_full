@@ -113,10 +113,10 @@ export function QuotesOverview() {
     <div className="w-full h-full p-6 overflow-y-auto flex flex-col">
       
       <div className="flex flex-col mb-4 shrink-0">
-        <h2 className="text-white text-lg font-bold tracking-tight font-poppins">
+        <h2 className="text-white/70 text-[14px] uppercase tracking-[0.2em] font-poppins font-extrabold mb-1">
           Daily Motivation
         </h2>
-        <p className="text-white/60 text-xs font-jetbrains font-extrabold">Stay consistent</p>
+        <p className="text-white/30 text-[10px] uppercase font-poppins font-bold tracking-wider">Stay consistent</p>
       </div>
 
       <div className="flex-1 flex items-center justify-center text-center">
